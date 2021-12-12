@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
     while(cin)
     {
         cout << "Enter Start Location" << endl;
-        cin >> start;
+        getline(cin, start);
         if (map.valueToIndex(start) != -1)
             break;
         cout << "Invalid Name! Try agian." << endl;
@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
     while(cin)
     {
         cout << "Enter Destination" << endl;
-        cin >> end;
+        getline(cin, end);
         if (map.valueToIndex(end) != -1)
             break;
         cout << "Invalid Name! Try agian." << endl;
